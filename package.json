@@ -1,0 +1,39 @@
+{
+  "name": "greeting_package",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vzvijer/greeting_package.git"
+  },
+  "author": "Vlado Zvijer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vzvijer/greeting_package/issues"
+  },
+  "homepage": "https://github.com/vzvijer/greeting_package#readme",
+  "devDependencies": {
+    "rollup": "^4.59.0",
+    "rollup-plugin-delete": "^3.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.9.3"
+  }
+}
